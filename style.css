@@ -3,18 +3,30 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #6c6b6b;
+}
+a {
+  text-decoration: none;
 }
 
-.header{
-  width:100%;
-  height:120px;
-  background-color:red;
+header{
+  width:90%;
+  padding:15px 0;
+  mergin:0 auto;
 }
 
-.header-top{
-  width:100%;
-  height:70px;
-  background-color:hotpink;
+header.heading{
+  font-size:32px;
+}
+.nav-list{
+  text-align:center;/*画像やテキストの行ぞろえを設定。left,center,rightがある。*/
+  padding:10px 0;
+  margin:0 auto;
+}
+.nav-list-item {
+  list-style: none; /*箇条書きリスト行頭のスタイルを設定。squareやcircleがあるが今回は何も表示しないnone */
+  display: inline-block;/*要素の表示形式を設定。上から積み重ねるblock,テキストと同じように横並びになるinline,横並びかつblockのようにpaddingなどが設定できるinlineblockがある。*/
+  margin: 0 20px;
 }
 .header-bottom{
   width:100%;
@@ -47,8 +59,13 @@
   height:600px;
   background-color:palegreen;
 }
-.footer{
+footer{
   width:100%;
   height:120px;
-  background-color:blue;
+  text-align:center;
+  line-height:120px;
+  background-color: #848282;
+}
+.footer-text{
+  color:#fff;
 }
